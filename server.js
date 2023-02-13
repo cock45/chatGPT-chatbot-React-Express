@@ -25,7 +25,7 @@ app.post("/chat", async (req, res) => {
   const completion = await openai.createCompletion({
     model: "text-davinci-003",
     prompt: prompt,
-    temperature: 0.7, //A number between 0 and 1 that determines how many creative risks the engine takes when generating text.
+    temperature: 0.8, //A number between 0 and 1 that determines how many creative risks the engine takes when generating text.
     max_tokens: 3000, // Maximum completion length. max: 4000-prompt
     frequency_penalty: 0.7,
   });
